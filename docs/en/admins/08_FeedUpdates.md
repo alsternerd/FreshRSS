@@ -56,4 +56,4 @@ Type=simple
 ExecStart=/usr/bin/php /usr/share/FreshRSS/app/actualize_script.php
 ```
 
-Finally, you need to enable the timer with `systemctl enable freshrss.timer` and reload the systemd configuration with `systemctl daemon-reload`.
+Finally, you need to enable the timer with `systemctl enable freshrss.timer`, then reload the systemd configuration with `systemctl daemon-reload` and start the service with `systemctl start freshrss.service`, otherwise you whould need to restart the system for it to work..
